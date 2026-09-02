@@ -1,8 +1,10 @@
-# QONG
+# Qong
 
 This is a small side project which runs a ping-pong-like game via quantum annealing. Specifically we construct an Ising-model Hamiltonian which when optimized gives the next state of the game:
 
 ![example](example.gif)
+
+## How it Works
 
 First we set up everything:
 
@@ -19,10 +21,10 @@ Then the game loop:
 3) The annealer then optimizes the Ising model, finding the minimum energy, and then we set the state based on the final state of the output qubits
 4) We draw the new positions of the paddles and ball in the terminal based on the new state, and the game continues until one player wins
 
-### Playing it
+## How to Play it
 
 To run it, you just need the latest version of QiliSDK, at least 0.2.2, which at the time of writing is the
-main (unreleased) branch of QiliSDK. As in the QiliSDK repo, we recommend using uv to manage the Python environment.
+main (unreleased) branch of QiliSDK. As in the QiliSDK repo, we recommend using uv to manage the Python environment:
 
 ```shell
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -34,7 +36,7 @@ source .venv/bin/activate
 uv pip install ../qilisdk
 ```
 
-You now have a virtual environment with the latest qilisdk, and can run Qong:
+You now have a virtual environment active with the latest qilisdk, and can run Qong:
 
 ```shell
 python qong.py
