@@ -301,7 +301,7 @@ class GameData:
         obj_terms.append(xor_penalty(y_vars[dir_start], dir_high, reverse))
 
         # Make the model and set the objective
-        model = Model("Qong")
+        model = Model("QONG")
         obj = sum(obj_terms)
         model.set_objective(obj)
 

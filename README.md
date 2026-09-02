@@ -1,4 +1,4 @@
-# Qong
+# QONG
 
 This is a small side project which runs a ping-pong-like game via quantum annealing. Specifically we construct an Ising-model Hamiltonian which when optimized gives the next state of the game:
 
