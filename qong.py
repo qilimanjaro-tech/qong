@@ -464,7 +464,7 @@ class GameScreen:
         max_x = game_width - 1
 
         # Make sure we can fit the game on the screen
-        if game_starts_at_line + game_height > screen_height or game_width > screen_width:
+        if game_starts_at_line + game_height + 1 > screen_height or game_width + 1 > screen_width:
             self.screen.addstr(game_starts_at_line, 0, "Screen too small to draw the game!")
             self.screen.refresh()
             return False
