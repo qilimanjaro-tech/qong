@@ -23,23 +23,22 @@ Then the game loop:
 
 ## How to Play it
 
-To run it, you just need the latest version of QiliSDK, at least 0.2.2, which at the time of writing is the
-main (unreleased) branch of QiliSDK. As in the QiliSDK repo, we recommend using uv to manage the Python environment:
+To run it, you just need the latest version of QiliSDK. We recommend using uv to manage the Python environment:
 
 ```shell
 curl -LsSf https://astral.sh/uv/install.sh | sh
-git clone https://github.com/qilimanjaro-tech/qilisdk
-git clone https://github.com/qilimanjaro-tech/qong
+git clone --depth=1 https://github.com/qilimanjaro-tech/qilisdk
+git clone --depth=1 https://github.com/qilimanjaro-tech/qong
 cd qong
 uv venv
 source .venv/bin/activate
 uv pip install ../qilisdk
 ```
 
-You now have a virtual environment active with the latest qilisdk, and can run Qong:
+You now have a virtual environment active with the latest QiliSDK, and can run QONG:
 
 ```shell
 python qong.py
 ```
 
-By default this will run each anneal using classical simulated annealing, but options are available at the top of the Python script, such as using quantum variational annealing (which actually simulates the quantum system). Since for now we don't offer a 70+ qubit device, this has to be run via simulation.
+By default this will run each anneal using classical simulated annealing, but options are available at the top of the Python script, such as using quantum variational annealing (which actually simulates the quantum system).
