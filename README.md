@@ -2,8 +2,7 @@
 
 This is a small side project which runs a ping-pong-like game via quantum annealing. Specifically we construct a 75-qubit Ising-model Hamiltonian which when optimized gives the next state of the game:
 
-<!-- ![example](example.gif) -->
-![example](example.webm)
+<video src="https://github.com/user-attachments/assets/910dd895-b564-4eb3-975d-53167101c738" autoplay loop muted playsinline style="max-width:100%; height:auto;"></video>
 
 ## How it Works
 
